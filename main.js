@@ -1,4 +1,4 @@
-import {estado} from ".store.js";
+import {estado} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
