@@ -4,7 +4,9 @@ form.addEventListener('submit', envia);
 
 let estado = 0;
 
-function evenvia(evento) {
+atualiza();
+
+function envia(evento) {
     evento.preventDefault();
     console.log('Formulário enviado!');
     estado++;
