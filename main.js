@@ -1,4 +1,4 @@
-import store from "./store.js";
+import store, {adicionar} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
@@ -10,7 +10,7 @@ function envia(evento) {
     evento.preventDefault();
     console.log('Formulário enviado!');
     const n = form.valor.value;
-    store.estado.push(n);
+    adicionar(n);
     form.valor.value= "";
     form.valor.focus();
     atualiza();
